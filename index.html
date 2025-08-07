@@ -64,6 +64,47 @@
       padding: 20px;
       background-color: #f4f4f4;
     }
+
+    /* Projects layout */
+    #projects .project-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    #projects .project-item:last-child {
+      border-bottom: none;
+    }
+    #projects .project-item img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    #projects .project-item .project-info {
+      flex: 1;
+      margin-left: 20px;
+    }
+    #projects .project-item .project-info h3 {
+      margin: 0 0 8px;
+      font-size: 1.2em;
+    }
+    #projects .project-item .project-info p {
+      margin: 0 0 8px;
+    }
+    #projects .project-item .open-button {
+      margin-left: 20px;
+      background-color: #1f78c1;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    #projects .project-item .open-button:hover {
+      background-color: #155d8f;
+    }
   </style>
 </head>
 <body>
@@ -91,34 +132,41 @@
   <section id="projects">
     <h2>Projects</h2>
 
-    <details>
-      <summary>Dexterous Robotic Hand</summary>
-      <p><strong>Overview:</strong> Designing and controlling a robotic hand capable of human‑like dexterity using reinforcement learning and vision sensors.</p>
-      <p><strong>Technologies:</strong> PyTorch, ROS, OpenCV, Mujoco</p>
-      <img src="profile.jpg" alt="Project placeholder image">
-    </details>
+    <div class="project-item">
+      <img src="profile.jpg" alt="Dexterous Robotic Hand image">
+      <div class="project-info">
+        <h3>Dexterous Robotic Hand</h3>
+        <p>Designing and controlling a robotic hand capable of human‑like dexterity using reinforcement learning and vision sensors.</p>
+      </div>
+      <a class="open-button" href="https://github.com/pyae-sone-hmine/dexterous-robotic-hand" target="_blank">Open</a>
+    </div>
 
-    <details>
-      <summary>Autonomous Racecar</summary>
-      <p><strong>Overview:</strong> Developing an autonomous racing platform with real‑time perception, planning, and control modules to compete in autonomous races.</p>
-      <p><strong>Technologies:</strong> ROS, LIDAR, neural network perception, reinforcement learning</p>
-      <img src="profile.jpg" alt="Project placeholder image">
-    </details>
+    <div class="project-item">
+      <img src="profile.jpg" alt="Autonomous Racecar image">
+      <div class="project-info">
+        <h3>Autonomous Racecar</h3>
+        <p>Developing an autonomous racing platform with real‑time perception, planning, and control modules to compete in autonomous races.</p>
+      </div>
+      <a class="open-button" href="https://github.com/pyae-sone-hmine/autonomous-racecar" target="_blank">Open</a>
+    </div>
 
-    <details>
-      <summary>BikeLane Monitor</summary>
-      <p><strong>Overview:</strong> A system that uses computer vision to monitor bike lanes, detect obstructions, and provide analytics for urban planning.</p>
-      <p><strong>Technologies:</strong> Python, OpenCV, machine learning, geospatial analysis</p>
-      <img src="profile.jpg" alt="Project placeholder image">
-    </details>
+    <div class="project-item">
+      <img src="profile.jpg" alt="BikeLane Monitor image">
+      <div class="project-info">
+        <h3>BikeLane Monitor</h3>
+        <p>A system that uses computer vision to monitor bike lanes, detect obstructions, and provide analytics for urban planning.</p>
+      </div>
+      <a class="open-button" href="https://github.com/pyae-sone-hmine/bikelane-monitor" target="_blank">Open</a>
+    </div>
 
-    <details>
-      <summary>Game AI with Reinforcement Learning</summary>
-      <p><strong>Overview:</strong> A reinforcement learning agent trained to play strategic games, demonstrating how RL can learn complex policies from simulation.</p>
-      <p><strong>Technologies:</strong> Python, PyTorch, Gym</p>
-      <img src="profile.jpg" alt="Project placeholder image">
-    </details>
-
+    <div class="project-item">
+      <img src="profile.jpg" alt="Game AI project image">
+      <div class="project-info">
+        <h3>Game AI with Reinforcement Learning</h3>
+        <p>A reinforcement learning agent trained to play strategic games, demonstrating how RL can learn complex policies from simulation.</p>
+      </div>
+      <a class="open-button" href="https://github.com/pyae-sone-hmine/game-ai-reinforcement-learning" target="_blank">Open</a>
+    </div>
   </section>
 
   <section id="publications">
