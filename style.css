@@ -313,6 +313,57 @@ a:hover {
   color: #666;
 }
 
+/* Floating Contact Icons */
+.floating-contact {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 20px;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  background: var(--accent);
+  color: white;
+}
+
+.contact-icon.email::before {
+  content: "📧";
+}
+
+.contact-icon.github::before {
+  content: "🐙";
+}
+
+.contact-icon.linkedin::before {
+  content: "💼";
+}
+
+/* Hide original contact section */
+#contact {
+  display: none;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   #nav-menu a {
@@ -331,5 +382,15 @@ a:hover {
   }
   .skills-grid {
     flex-direction: column;
+  }
+  
+  .floating-contact {
+    right: 10px;
+  }
+  
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
   }
 }
