@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pyae Sone Hmine | Personal Website</title>
+  <title>Pyae Sone Nyo Hmine | Personal Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -105,15 +105,61 @@
     #projects .project-item .open-button:hover {
       background-color: #155d8f;
     }
+
+    /* Publications layout - matching projects */
+    #publications .publication-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    #publications .publication-item:last-child {
+      border-bottom: none;
+    }
+    #publications .publication-item img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    #publications .publication-item .publication-info {
+      flex: 1;
+      margin-left: 20px;
+    }
+    #publications .publication-item .publication-info h3 {
+      margin: 0 0 8px;
+      font-size: 1.2em;
+    }
+    #publications .publication-item .publication-info p {
+      margin: 0 0 8px;
+    }
+    #publications .publication-item .open-button {
+      margin-left: 20px;
+      background-color: #1f78c1;
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    #publications .publication-item .open-button:hover {
+      background-color: #155d8f;
+    }
+
+
+
+
   </style>
 </head>
 <body>
   <header>
-    <h1>Pyae Sone Hmine</h1>
+    <h1>Pyae Sone Nyo Hmine</h1>
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -129,57 +175,99 @@
     </div>
   </section>
 
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <div class="publication-item">
+      <img src="bnet.png" alt="Adaptive Noise Filtering publication">
+      <div class="publication-info">
+        <h3>Adaptive Noise Filtering Using Reinforcement Learning</h3>
+        <p>Exploring reinforcement learning to develop adaptive filters that can attenuate variable noise in sensor data while preserving signal quality. This work aims to improve perception in robotics and autonomous systems.</p>
+        <p><em>Status: In Progress</em></p>
+      </div>
+      <a class="open-button" href="#" target="_blank">Open</a>
+    </div>
+  </section>
+
   <section id="projects">
     <h2>Projects</h2>
 
     <div class="project-item">
-      <img src="profile.jpg" alt="Dexterous Robotic Hand image">
+      <img src="hand.png" alt="Dexterous Robotic Hand image">
       <div class="project-info">
         <h3>Dexterous Robotic Hand</h3>
-        <p>Designing and controlling a robotic hand capable of human‑like dexterity using reinforcement learning and vision sensors.</p>
+        <p>Built and trained a robotic hand capable of human‑like dexterity using reinforcement learning and vision sensors.</p>
       </div>
       <a class="open-button" href="https://github.com/pyae-sone-hmine/dexterous-robotic-hand" target="_blank">Open</a>
     </div>
 
     <div class="project-item">
-      <img src="profile.jpg" alt="Autonomous Racecar image">
+      <img src="racecar.png" alt="Autonomous Racecar image">
       <div class="project-info">
         <h3>Autonomous Racecar</h3>
-        <p>Developing an autonomous racing platform with real‑time perception, planning, and control modules to compete in autonomous races.</p>
+        <p>Autonomous racing platform with real‑time perception, planning, and control modules to compete in MIT's annual racecar competition.</p>
       </div>
-      <a class="open-button" href="https://github.com/pyae-sone-hmine/autonomous-racecar" target="_blank">Open</a>
+      <a class="open-button" href="https://rss2025-1.github.io/website/labs/#home" target="_blank">Open</a>
     </div>
 
-    <div class="project-item">
-      <img src="profile.jpg" alt="BikeLane Monitor image">
-      <div class="project-info">
-        <h3>BikeLane Monitor</h3>
-        <p>A system that uses computer vision to monitor bike lanes, detect obstructions, and provide analytics for urban planning.</p>
-      </div>
-      <a class="open-button" href="https://github.com/pyae-sone-hmine/bikelane-monitor" target="_blank">Open</a>
-    </div>
+                  <div class="project-item">
+          <img src="stock.png" alt="Stock Portfolio Analysis Tool">
+          <div class="project-info">
+            <h3>Stock Portfolio Analysis Tool</h3>
+            <p>Comprehensive financial analysis platform for portfolio optimization, risk assessment, and performance tracking.</p>
+          </div>
+          <a class="open-button" href="https://github.com/pyae-sone-hmine/Stock-Portforlio-Manager" target="_blank">Open</a>
+        </div>
 
-    <div class="project-item">
-      <img src="profile.jpg" alt="Game AI project image">
-      <div class="project-info">
-        <h3>Game AI with Reinforcement Learning</h3>
-        <p>A reinforcement learning agent trained to play strategic games, demonstrating how RL can learn complex policies from simulation.</p>
-      </div>
-      <a class="open-button" href="https://github.com/pyae-sone-hmine/game-ai-reinforcement-learning" target="_blank">Open</a>
-    </div>
-  </section>
+              <div class="project-item">
+          <img src="tello.png" alt="Autonomous Human-Following Drone">
+          <div class="project-info">
+            <h3>Autonomous Human-Following Drone</h3>
+            <p>UAV that uses pose estimation and machine learning models to track and follow individuals in real-time.</p>
+          </div>
+          <a class="open-button" href="https://github.com/pyae-sone-hmine/UAV-Final-Project" target="_blank">Open</a>
+        </div>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <details>
-      <summary>Adaptive Noise Filtering Using Reinforcement Learning (In Progress)</summary>
-      <p>Exploring reinforcement learning to develop adaptive filters that can attenuate variable noise in sensor data while preserving signal quality. This work aims to improve perception in robotics and autonomous systems.</p>
-    </details>
+        <div class="project-item">
+          <img src="bipedal.png" alt="Bipedal Robot Locomotion">
+          <div class="project-info">
+            <h3>Bipedal Robot Locomotion</h3>
+            <p>Reinforcement learning system for dynamic bipedal robot walking and balance control across varied terrains and conditions.</p>
+          </div>
+          <a class="open-button" href="https://github.com/pyae-sone-hmine/Bipedal-Robot-Simulations" target="_blank">Open</a>
+        </div>
+
+        <div class="project-item">
+          <img src="bike.png" alt="BikeLane Monitor image">
+          <div class="project-info">
+            <h3>BikeLane Monitor</h3>
+            <p>A system that uses computer vision to monitor bike lanes, detect obstructions, and provide analytics for urban planning.</p>
+          </div>
+          <a class="open-button" href="https://docs.google.com/presentation/d/1GZGisM_pTssrNAJ1FwF71E4cBufDtKdpou7mm9Ym6do/edit?usp=sharing" target="_blank">Open</a>
+        </div>
+
+        <div class="project-item">
+          <img src="security.png" alt="Smart Home Security System">
+          <div class="project-info">
+            <h3>Smart Home Security System</h3>
+            <p>Raspberry Pi-based security system with facial recognition for automated access control and real-time threat detection.</p>
+          </div>
+          <a class="open-button" href="https://github.com/pyae-sone-hmine/Home-System--Discord" target="_blank">Open</a>
+        </div>
+      </section>
+
+  <section id="awards">
+    <h2>Awards & Recognition</h2>
+    <ul>
+      <li>MIT Excellence Award (2024) - Recognition for outstanding contributions to robotics research</li>
+      <li>Dean's List (2023) - Consistent academic excellence in engineering coursework</li>
+      <li>Research Fellowship (2023) - Granted for innovative research in adaptive noise filtering</li>
+    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Email: <a href="mailto:pyaesone@mit.edu">pyaesone@mit.edu</a></p>
     <p>GitHub: <a href="https://github.com/pyae-sone-hmine">pyae-sone-hmine</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/pyae-sone-hmine">Pyae Sone Hmine</a></p>
   </section>
